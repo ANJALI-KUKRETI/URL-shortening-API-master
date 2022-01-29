@@ -1,0 +1,554 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Mochiy+Pop+One&family=Poppins:wght@300;400;500&family=Raleway:wght@500&family=Rubik:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 100%;
+  color: hsl(257, 7%, 63%);
+  /* background-size: cover; */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 75vw;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/* =======================Navbar Small================== */
+.navbarSmall {
+  display: flex;
+  justify-content: space-between;
+}
+.navbarSmall i {
+  font-size: 30px;
+}
+/* ====================Navbar later=================== */
+.navBarLater {
+  width: 90vw;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+.navBarLater li {
+  list-style: none;
+  margin: 15px 0;
+  cursor: pointer;
+}
+.log {
+  border-top: 1px solid hsl(0, 1%, 58%);
+  padding-top: 25px;
+}
+.navBarLater .btns {
+  margin-top: 10px;
+}
+.btns div {
+  cursor: pointer;
+  margin: 10px 0;
+}
+/* =======================Navbar==================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.navbarSmall {
+  display: none;
+  pointer-events: none;
+}
+.topLeft {
+  display: flex;
+  width: 30rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.lists {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 22rem;
+}
+.lists li {
+  cursor: pointer;
+  font-weight: 700;
+}
+.lists li:hover {
+  color: hsl(260, 8%, 14%);
+}
+.buttons {
+  display: flex;
+  width: 10rem;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+.buttons div {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: hsl(180, 66%, 49%);
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+}
+.buttons div:hover {
+  opacity: 0.6;
+}
+
+/* =======================Hero===================== */
+.hero {
+  display: flex;
+  width: 75vw;
+  justify-content: space-between;
+  margin: 5rem 0rem;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 60px;
+  color: hsl(260, 8%, 14%);
+  font-weight: bolder;
+  line-height: 70px;
+}
+.left,
+.right {
+  width: 30vw;
+  padding: 10px;
+}
+.right img {
+  width: 44rem;
+  height: 28rem;
+  position: absolute;
+  top: 100px;
+  right: -70px;
+}
+
+.para {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.left .btn {
+  width: 10rem;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.left .btn:hover {
+  opacity: 0.6;
+}
+
+/* ====================lower==================== */
+
+.lower {
+  background-color: hsl(210, 22%, 96%);
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 12rem;
+  box-sizing: border-box;
+}
+.urlBar {
+  height: 8rem;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 10px;
+  padding: 30px;
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -6rem;
+  background-image: url("images/bg-shorten-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.inp {
+  width: 50rem;
+  border: none;
+  border-radius: 5px;
+  height: 3rem;
+  padding: 10px 20px;
+  margin: 5px 15px;
+  font-size: 16px;
+}
+.inp:focus {
+  outline: none;
+  color: hsl(257, 7%, 63%);
+}
+.shortenBtn {
+  height: 3rem;
+  width: 8rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 16px;
+}
+.shortenBtn:hover {
+  background-color: hsl(180, 58%, 73%);
+}
+
+/* ====================Stickers==================== */
+
+.sticker {
+  height: 4rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.oldLink {
+  color: hsl(260, 8%, 14%);
+  font-weight: 500;
+  font-size: 13px;
+}
+.newLink {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+.link {
+  color: hsl(180, 66%, 49%);
+  font-weight: 500;
+  margin: 0px 20px;
+}
+.copy {
+  cursor: pointer;
+  width: 6rem;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+}
+.copy:hover {
+  opacity: 0.6;
+}
+/* ========================Statistics================= */
+.statistics {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  width: 28rem;
+  text-align: center;
+}
+.info h2 {
+  font-size: 28px;
+  color: hsl(260, 8%, 14%);
+}
+.info p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 6rem 0;
+  width: 75vw;
+}
+.card {
+  width: 20rem;
+  height: 15rem;
+  background-color: white;
+  margin: 0px 20px;
+  padding: 45px 25px;
+  border-radius: 5px;
+  font-weight: 500;
+  position: relative;
+}
+.card h3 {
+  color: hsl(260, 8%, 14%);
+  margin: 8px 0px;
+}
+.cardImage {
+  position: absolute;
+  top: -30px;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 50%;
+}
+.cardImage img {
+  height: 1.5rem;
+}
+.card2 {
+  margin-top: 2.5rem;
+}
+.card3 {
+  margin-top: 5rem;
+}
+
+/* ====================Footer================== */
+.footerUp {
+  padding: 3rem 0;
+  background-color: hsl(257, 27%, 26%);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  background-image: url(images/bg-boost-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footerUp h2 {
+  margin-bottom: 10px;
+}
+.footerUp .btn {
+  cursor: pointer;
+}
+.footerUp .btn:hover {
+  background-color: hsl(180, 58%, 73%);
+}
+
+.footerDown {
+  width: 100vw;
+  background-color: hsl(260, 8%, 14%);
+  padding: 3rem;
+  font-weight: 500;
+}
+.footerDown .wrapper {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.middle {
+  display: flex;
+  justify-content: space-between;
+  width: 35vw;
+}
+.middle h4 {
+  color: white;
+  margin-bottom: 10px;
+}
+.middle li {
+  list-style: none;
+  margin: 5px;
+  cursor: pointer;
+}
+.middle li:hover {
+  color: hsl(180, 66%, 49%);
+}
+.first {
+  filter: brightness(0) invert(1);
+}
+.last i {
+  margin: 0px 10px;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+}
+.last i:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+/* ============Hidden============= */
+.hidden {
+  display: none;
+  pointer-events: none;
+}
+
+/* =======================Responsive=================== */
+@media screen and (max-width: 1240px) {
+  .wrapper,
+  .cards,
+  .urlBar {
+    width: 80vw;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .right img {
+    width: 38rem;
+    height: 23rem;
+  }
+
+  .cards p,
+  .footerDown li {
+    font-size: 14px;
+  }
+  .card {
+    padding: 20px;
+    height: 13rem;
+  }
+}
+@media screen and (max-width: 970px) {
+  .wrapper,
+  .cards,
+  .urlBar {
+    width: 85vw;
+  }
+  /* .lower {
+    margin-top: 5rem;
+  } */
+  .card {
+    /* height: 17rem; */
+    padding: 30px 5px 5px 5px;
+  }
+  .right img {
+    width: 32rem;
+    height: 17rem;
+  }
+  .para {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* .urlBar {
+    top: 88%;
+  } */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .card {
+    width: 50vw;
+    margin-top: 40px;
+    padding: 30px;
+  }
+  .lower {
+    margin-top: 9rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .hero {
+    /* flex-direction: column; */
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    margin: auto;
+  }
+
+  .right {
+    width: 85vw;
+    align-items: center;
+  }
+  .left {
+    width: 70vw;
+    align-items: center;
+    margin: auto;
+  }
+  .para {
+    text-align: center;
+  }
+  .title {
+    text-align: center;
+    line-height: 33px;
+  }
+  .right img {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    /* width: ; */
+  }
+  .navbar {
+    display: none;
+    pointer-events: none;
+  }
+  .navbarSmall {
+    display: flex;
+    pointer-events: all;
+  }
+  .navbarSmall i {
+    cursor: pointer;
+  }
+  .footerDown .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .middle {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0px;
+  }
+  .urlBar {
+    flex-direction: column;
+  }
+  .inp {
+    width: 70vw;
+  }
+  .sticker {
+    flex-direction: column;
+    padding: 10px;
+    height: 8rem;
+    font-size: 12px;
+  }
+  .newLink {
+    flex-direction: column;
+  }
+  .link {
+    margin: 7px;
+  }
+  .lower {
+    margin-top: 9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card {
+    width: 80vw;
+    text-align: center;
+  }
+  .footerDown {
+    padding: 1.5rem 0;
+  }
+  .info {
+    width: 80vw;
+  }
+  .cardImage {
+    left: 40%;
+  }
+  .right img {
+    left: -40px;
+  }
+  .btn {
+    width: 70vw;
+    text-align: center;
+    padding: 7px;
+  }
+  .footerUp .btn {
+    width: 35vw;
+  }
+}
